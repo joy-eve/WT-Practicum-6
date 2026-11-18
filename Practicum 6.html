@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SupplySphere - Positioning Elements</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #eef2f3;
+            color: #183b4e;
+        }
+
+        header, footer {
+            background: #183b4e;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .container {
+            position: relative;
+            max-width: 750px;
+            height: 480px;
+            margin: 40px auto;
+            background: #dce8ed;
+            border-radius: 12px;
+        }
+
+        .box {
+            position: absolute;
+            width: 40%;
+            height: 140px;
+            background: #28566b;
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .box1 {
+            top: 20px;
+            left: 20px;
+        }
+
+        .box2 {
+            top: 20px;
+            right: 20px;
+        }
+
+        .box3 {
+            bottom: 20px;
+            left: 20px;
+        }
+
+        .box4 {
+            bottom: 20px;
+            right: 20px;
+        }
+
+        .center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            background: #183b4e;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .tag {
+            position: fixed;
+            bottom: 15px;
+            right: 15px;
+            background: #28566b;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            z-index: 3;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                height: 650px;
+                margin: 20px;
+            }
+
+            .box {
+                width: 42%;
+                height: 130px;
+                padding: 10px;
+            }
+
+            .center {
+                padding: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>SupplySphere</h1>
+        <p>Logistics Positioning Dashboard</p>
+    </header>
+
+    <div class="container">
+
+        <div class="box box1">
+            <h3>Inventory</h3>
+            <p>Manage warehouse stock</p>
+        </div>
+
+        <div class="box box2">
+            <h3>Shipments</h3>
+            <p>Track moving goods</p>
+        </div>
+
+        <div class="box box3">
+            <h3>Suppliers</h3>
+            <p>Manage supplier records</p>
+        </div>
+
+        <div class="box box4">
+            <h3>Deliveries</h3>
+            <p>Monitor customer orders</p>
+        </div>
+
+        <div class="center">
+            <h3>SupplySphere</h3>
+            <p>Logistics Management</p>
+        </div>
+
+    </div>
+
+    <div class="tag">Dashboard</div>
+
+    <footer>
+        <p>© 2026 SupplySphere | Logistics Management</p>
+    </footer>
+
+</body>
+</html>
